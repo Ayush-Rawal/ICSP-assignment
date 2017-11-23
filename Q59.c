@@ -8,6 +8,7 @@ void remove(int *a,int pos,size_t size){
 		a[pos+i]=a[pos+i+1];
 	}
 }
+
 void scan_array(int a[],int size)
 {
 	printf("Enter elements of array");	int i;
