@@ -61,7 +61,7 @@ int main(void)
 	int row,col;
 	struct oesize oe;
 	printf("Enter rows and columns in array");
-	scanf("%d %d",&row,&col)
+	scanf("%d %d",&row,&col);
 	int **arr=allocate_2d(row,col);
 	int even[row*col],odd[row*col];
 	scan_2d_array(arr,row,col);
