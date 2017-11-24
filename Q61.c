@@ -1,39 +1,10 @@
 //Write a program to input the elements of a 2-D array. Then from this array, make two arrays: one that stores all odd elements of the 2-D array and the other stores all even elements of the array
 #include<stdio.h>
+#include "ICSP.h"
 
 struct oesize{
 	int odd_size,even_size;
 };
-
-
-int** allocate_2d(int r,int c){
-	int **arr;
-	arr = malloc(r*sizeof(int*));
-	for(int i=0; i < r; i++){
-    	arr[i] = malloc(c*sizeof(int));
-	}
-	return arr;
-}
-
-void scan_2d_array(int** a,int row,int col)
-{
-	printf("Enter elements of array:");	int i,j;
-	for(i=0;i<row;i++){
-		for(j=0;j<col;j++){
-			scanf("%d",&a[i]);
-		}
-		printf("");
-	}
-}
-
-void print_array(int a[],int size)
-{
-	int i;
-	printf("Array is:");
-	for(i=0;i<size;i++){
-	printf("%d",a[i]);
-	}
-}
 
 struct oesize store_odd_even(int **a,int row,int col,int even[], int odd[])
 {

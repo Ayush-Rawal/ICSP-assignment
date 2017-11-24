@@ -1,23 +1,8 @@
 //Write a program to store even and odd elements of an array in two separate arrays.
 
 #include<stdio.h>
+#include "ICSP.h"
 
-void scan_array(int a[],int size)
-{
-int i;
-printf("Enter array elements");
-for(i=0;i<size;i++){
-	scanf("%d",&a[i]);
-	}
-}
-
-void print_array(int a[],int size)
-{
-int i;
-for(i=0;i<size;i++){
-	printf("%d",a[i]);
-	}
-}
 struct oesize{
 	int odd_size,even_size;
 };

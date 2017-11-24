@@ -7,8 +7,8 @@ int main(void)
     scanf("%d",&size);
     int arr[size];
     printf("\nEnter array\n");
-    for(i=0;i<n;i++){
-        scanf("%d",&arr[i])
+    for(i=0;i<size;i++){
+        scanf("%d",&arr[i]);
 		small=a[pos];
 		pos=(a[i]<small)?i:a[0];
     }

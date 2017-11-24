@@ -1,28 +1,7 @@
 //Write a program to add and subtract two 3x3 matrices
 
 #include<stdio.h>
-
-void print_2d_array(int **a,int row,int col)
-{
-	printf("Array is:");	int i,j;
-	for(i=0;i<row;i++){
-	for(j=0;j<col;j++){
-		printf("%d",a[i]);
-		}
-	}
-}
-
-void scan_2d_array(int **a,int row,int col)
-{
-	printf("Enter elements of array:");
-	int i,j;
-	for(i=0;i<row;i++){
-		for(j=0;j<col;j++){
-			scanf("%d",&a[i]);
-		}
-		printf("\n");
-	}
-}
+#include "ICSP.h"
 
 int** add_mxm(int **a,int **b,const int m)
 {

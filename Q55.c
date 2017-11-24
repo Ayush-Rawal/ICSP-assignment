@@ -1,22 +1,7 @@
 //Write a program to interchange the values of the odd and even positions of an array.
 
 #include<stdio.h>
-
-void scan_array(int a[],int size)
-{
-int i;
-for(i=0;i<size;i++){
-	scanf("%d",&a[i]);
-}
-}
-
-void print_array(int a[],int size)
-{
-int i;
-for(i=0;i<size;i++){
-	printf("%d",a[i]);
-}
-}
+#include "ICSP.h"
 
 void interchange(int a[],size_t size)
 {

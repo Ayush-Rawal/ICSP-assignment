@@ -1,6 +1,7 @@
 //Write a program to check whether the array of integers contains duplicate numbers and also delete all the duplicate numbers.
 
 #include<stdio.h>
+#include"ICSP.h"
 void remove(int *a,int pos,size_t size){
 	int i;
 	for(int i=0;i<size-pos;i++){
@@ -65,21 +66,6 @@ void find_and_remove(int a[],size_t size)
 	for(i=0;i<size;i++){
 		if(a[i]==a[i+1])
 		remove(a,i+1,size);
-	}
-}
-void print_array(int a[],size_t size)
-{
-int i;
-for(i=0;i<size;i++){
-	printf("%d",a[i]);
-	}
-}
-
-void scan_array(int a[],size_t size)
-{
-int i;
-for(i=0;i<size;i++){
-	scanf("%d",&a[i]);
 	}
 }
 

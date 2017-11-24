@@ -1,14 +1,7 @@
 //Write a program to display the reverse of an array.
 
 #include<stdio.h>
-
-void scan_array(int a[],int size)
-{
-	printf("Enter elements of array");	int i;
-	for(i=0;i<size;i++){
-	scanf("%d",&a[i]);
-	}
-}
+#include "ICSP.h"
 
 void print_array_reverse(int a[],int size)
 {

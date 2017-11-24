@@ -1,22 +1,7 @@
 //Write a program to insert a new element in an user defined array at any desired position.
 
 #include<stdio.h>
-
-void scan_array(int a[],int size)
-{
-int i;
-for(i=0;i<size;i++){
-	scanf("%d",&a[i]);
-	}
-}
-
-void print_array(int a[],int size)
-{
-int i;
-for(i=0;i<size;i++){
-	printf("%d",a[i]);
-	}
-}
+#include "ICSP.h"
 
 void insert(int a[],size_t size, int elem,int pos)
 {
