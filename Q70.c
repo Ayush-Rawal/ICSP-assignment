@@ -25,11 +25,11 @@ int binary_search(int a[],size_t size, int elem)
 int main(void)
 {
 	size_t size;
-	printf("Enter size of array")
+	printf("Enter size of array");
 	scanf("%d",&size);
 	int arr[size],elem;
 	scan_array(arr,size);
-	printf("Enter element to be searched")
+	printf("Enter element to be searched");
 	scanf("%d",&elem);
 	
 	return 0;
